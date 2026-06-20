@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 技能能力展示 · Skill Showcase</title>
+<meta name="description" content="用 AI 為你的事業做什麼：影音製作、AI 視覺、行銷自動化、網站開發，一站式交付。">
+<style>
+  :root{
+    --bg:#0d0f1a; --bg2:#141728; --gold:#e8c254; --gold2:#f4d77a;
+    --text:#e8eaf0; --muted:#9aa0b4; --line:#262a40; --accent:#5b9bd5;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;
+       background:var(--bg);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased}
+  a{color:var(--gold);text-decoration:none}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+
+  /* HERO */
+  header{padding:90px 0 70px;text-align:center;
+    background:radial-gradient(900px 400px at 50% -10%,rgba(232,194,84,.13),transparent 70%)}
+  .badge{display:inline-block;border:1px solid var(--gold);color:var(--gold);
+    border-radius:999px;padding:5px 16px;font-size:13px;letter-spacing:1px;margin-bottom:24px}
+  h1{font-size:46px;line-height:1.25;font-weight:800;letter-spacing:.5px}
+  h1 .g{background:linear-gradient(90deg,var(--gold),var(--gold2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{color:var(--muted);font-size:18px;margin:22px auto 34px;max-width:640px}
+  .cta{display:inline-block;background:linear-gradient(90deg,var(--gold),var(--gold2));
+    color:#1a1407;font-weight:700;padding:14px 32px;border-radius:12px;font-size:16px;
+    transition:transform .15s, box-shadow .15s;box-shadow:0 8px 30px rgba(232,194,84,.25)}
+  .cta:hover{transform:translateY(-2px);box-shadow:0 12px 38px rgba(232,194,84,.4)}
+
+  /* SECTION */
+  section{padding:54px 0}
+  .stitle{font-size:14px;letter-spacing:3px;color:var(--accent);text-transform:uppercase;margin-bottom:8px}
+  .shead{font-size:28px;font-weight:800;margin-bottom:30px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
+  .card{background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:24px;
+    transition:transform .15s,border-color .15s}
+  .card:hover{transform:translateY(-3px);border-color:var(--gold)}
+  .card .ic{font-size:30px;margin-bottom:12px}
+  .card h3{font-size:18px;margin-bottom:8px}
+  .card p{color:var(--muted);font-size:14.5px}
+  .group{margin-bottom:46px}
+  .gname{font-size:20px;font-weight:700;margin-bottom:16px;padding-left:12px;border-left:4px solid var(--gold)}
+
+  /* WHY */
+  .why{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .why .grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+  .why .item h4{color:var(--gold);font-size:17px;margin-bottom:6px}
+  .why .item p{color:var(--muted);font-size:14.5px}
+
+  /* STEPS */
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+  .step{background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:24px}
+  .step .n{width:36px;height:36px;border-radius:50%;background:var(--gold);color:#1a1407;
+    font-weight:800;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+
+  /* CTA BLOCK */
+  .ctablock{text-align:center;padding:70px 0;
+    background:radial-gradient(700px 300px at 50% 120%,rgba(232,194,84,.12),transparent 70%)}
+  .ctablock h2{font-size:30px;margin-bottom:14px}
+  .ctablock p{color:var(--muted);margin-bottom:28px}
+
+  footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:var(--muted);font-size:13px}
+  @media(max-width:600px){h1{font-size:34px}.sub{font-size:16px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="badge">AI CAPABILITY SHOWCASE</div>
+    <h1>把 AI 變成<span class="g">會自己做事</span>的<br>創作 × 行銷 × 自動化系統</h1>
+    <p class="sub">不只是跟 AI 聊天 —— 從拍廣告、剪短片、生圖，到行銷策略、網站開發、流程自動化，一條龍交付成品。</p>
+    <a class="cta" href="#contact">立即洽詢 →</a>
+  </div>
+</header>
+
+<section class="wrap">
+  <div class="stitle">What we do</div>
+  <div class="shead">能力清單 · 我們能幫你做什麼</div>
+
+  <div class="group">
+    <div class="gname">🎬 影音內容製作</div>
+    <div class="grid">
+      <div class="card"><div class="ic">🎞️</div><h3>AI 影片製片</h3><p>一句話劇本 → 分鏡 → 生圖 → 生影片 → 剪接，整支片交付。</p></div>
+      <div class="card"><div class="ic">✂️</div><h3>短影音量產</h3><p>長片自動切成一批 9:16 直式短片（IG / TikTok / Shorts）。</p></div>
+      <div class="card"><div class="ic">📺</div><h3>動態廣告</h3><p>15 秒「不像 AI」的精緻商業廣告，作品集 / 交付客戶。</p></div>
+      <div class="card"><div class="ic">🎙️</div><h3>Podcast 製作</h3><p>影片 / 文章 → 中文重點 → AI 對談 Podcast。</p></div>
+    </div>
+  </div>
+
+  <div class="group">
+    <div class="gname">🖼️ AI 視覺 · 生圖 · 分身</div>
+    <div class="grid">
+      <div class="card"><div class="ic">📸</div><h3>品牌產品攝影</h3><p>品牌級產品圖、情境圖、廣告素材，免棚拍。</p></div>
+      <div class="card"><div class="ic">🛒</div><h3>電商上架圖卡</h3><p>商品主圖、細節卡、A+ 內容模組。</p></div>
+      <div class="card"><div class="ic">🧑‍🎤</div><h3>真人代言廣告</h3><p>AI 生成真人口播帶貨 UGC 影片。</p></div>
+      <div class="card"><div class="ic">👤</div><h3>數位分身</h3><p>訓練專屬人臉模型，生成一致的你。</p></div>
+    </div>
+  </div>
+
+  <div class="group">
+    <div class="gname">💼 行銷 · 銷售 · 商業</div>
+    <div class="grid">
+      <div class="card"><div class="ic">📈</div><h3>行銷銷售顧問</h3><p>定價、漏斗、文案、品牌定位、競品分析。</p></div>
+      <div class="card"><div class="ic">🎯</div><h3>潛在客戶開發</h3><p>自動建潛在客戶名單 + 有效聯絡信箱。</p></div>
+      <div class="card"><div class="ic">📊</div><h3>交易 / 投資分析</h3><p>用系統化規則體檢交易，打分 + 修正建議。</p></div>
+    </div>
+  </div>
+
+  <div class="group">
+    <div class="gname">🤖 AI 自動化 · 流程系統</div>
+    <div class="grid">
+      <div class="card"><div class="ic">🔁</div><h3>循環自動化</h3><p>設計會自己出任務、檢查、循環跑到完成的系統。</p></div>
+      <div class="card"><div class="ic">⏰</div><h3>排程 / 監控 / 自癒</h3><p>定時跑任務、監控服務、掛掉自動修。</p></div>
+      <div class="card"><div class="ic">🧠</div><h3>本地模型微調</h3><p>訓練你專屬的本地 AI 模型。</p></div>
+    </div>
+  </div>
+
+  <div class="group">
+    <div class="gname">🌐 網站 · 技術開發</div>
+    <div class="grid">
+      <div class="card"><div class="ic">🔍</div><h3>網站審核 / QA</h3><p>實開網站跑全面體檢，列出問題 + 修復指令。</p></div>
+      <div class="card"><div class="ic">⚡</div><h3>效能優化</h3><p>Core Web Vitals、Lighthouse、載入速度。</p></div>
+      <div class="card"><div class="ic">🎨</div><h3>UI/UX 設計</h3><p>現代化介面，深厚設計庫支撐。</p></div>
+      <div class="card"><div class="ic">☁️</div><h3>雲端開發</h3><p>Cloudflare Workers、Agent、資料庫、Email。</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="why">
+  <div class="wrap" style="padding:54px 24px">
+    <div class="stitle">Why us</div>
+    <div class="shead">為什麼選我們</div>
+    <div class="grid3">
+      <div class="item"><h4>會做事，不只給建議</h4><p>我們交付成品 —— 影片、圖、網站、自動化流程，不是一份報告。</p></div>
+      <div class="item"><h4>會自己跑的系統</h4><p>把 AI 變成會自我檢查、循環執行到完成的系統，省你的時間。</p></div>
+      <div class="item"><h4>一站式整合</h4><p>創作、行銷、技術、自動化全包，不用東拼西湊。</p></div>
+    </div>
+  </div>
+</div>
+
+<section class="wrap">
+  <div class="stitle">How to start</div>
+  <div class="shead">怎麼開始</div>
+  <div class="steps">
+    <div class="step"><div class="n">1</div><h3>告訴我們你的目標</h3><p>一句話說你想做什麼。</p></div>
+    <div class="step"><div class="n">2</div><h3>我們配對能力</h3><p>挑出最適合的 AI 能力組合。</p></div>
+    <div class="step"><div class="n">3</div><h3>交付成品</h3><p>給你能用的成果，不只是想法。</p></div>
+  </div>
+</section>
+
+<div class="ctablock">
+  <div class="wrap">
+    <h2>準備好讓 AI 幫你做事了嗎？</h2>
+    <p>一封信，我們聊聊你的需求。</p>
+    <a class="cta" href="#contact">📩 聯絡我們</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">© 2026 AI Capability Showcase · Powered by Claude Code</div>
+</footer>
+
+</body>
+</html>
